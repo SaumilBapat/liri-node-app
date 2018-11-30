@@ -39,12 +39,10 @@ function spotifyThisSong(songName) {
       console.log('\n');
     });
   });
-  console.log(songName);
 }
 
 function movieThis(movieName) {
   movieName = movieName ? movieName : 'Mr. Nobody.';
-  console.log(movieName);
   axios.get("http://www.omdbapi.com/?apikey=trilogy&t=" + movieName)
   .then((movie) => {
     console.log('-----')
